@@ -1,0 +1,17 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.button-in-dark-backgroud {
+    @extend .button;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+@mixin action-button {
+    @extend .button;
+    border: 1px solid white;
+    color: white;
+}

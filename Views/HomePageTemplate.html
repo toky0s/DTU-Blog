@@ -2,99 +2,51 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Resourses/css/HomePage.css">
+    <link rel="stylesheet" href="../Resourses/css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="navbar">
-            <nav class="navbar__navitem">
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="">Dtok</a></li>
+                    <li class="brand"><a href="">Dtok</a></li>
                     <li><a href="">Bài viết mới nhất</a></li>
                     <li><a href="">Tags</a></li>
                     <li><a href="">Thông tin</a></li>
                 </ul>
             </nav>
-            <form class="navbar__search-form" action="get">
-                <input class="search-bar" type="search" name="" id="" placeholder="Tìm kiếm...">
-                <input class="search-button" type="button" value="Tìm kiếm">
-            </form>
-
+            <div class="search">
+                <form action="get">
+                    <input class="search-textbox" type="search" name="" id="" placeholder="Sách, gái, vé xe...">
+                    <input class="search-button" type="button" value="Tìm kiếm">
+                </form>
+            </div>
+            <div class="account">
+                <a href="" class="action-button">Login</a>
+                <a href="" class="action-button">Sign up</a>
+            </div>
         </div>
     </header>
-    <div class="main">
-        <div class="main__brand-image">
-        </div>
-        <div class="main-section">
-            <section class="main__content-container">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas debitis quas consequuntur odio
-                excepturi
-                doloribus saepe fugiat enim similique in commodi distinctio ipsam, velit nisi voluptatibus ipsa
-                corporis,
-                tempore eum.
-                Debitis vero architecto ad natus. Fugit nisi, corporis temporibus repellat obcaecati quod laboriosam
-                atque
-                labore beatae aperiam ut totam velit voluptatum, ipsa minus quasi error, fuga voluptatibus dolorum
-                accusamus
-                id.
-                Quas eligendi rerum fugit dolorum ratione fugiat consequuntur nam quibusdam error. Quo atque tempore
-                laboriosam dicta, cum exercitationem illo, sed cumque voluptas doloremque mollitia laudantium recusandae
-                rem
-                vero obcaecati. Rem.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, consequatur quas quisquam
-                distinctio optio dolor explicabo voluptatum accusantium corporis accusamus error recusandae. Sapiente
-                doloribus tempore magnam tempora numquam tenetur architecto.
-                Explicabo autem reprehenderit, totam excepturi laborum iusto, quod quidem inventore eligendi id
-                reiciendis rem soluta. Quisquam consequatur nulla repellat amet. Iure aut eius maiores a quas tempora
-                iusto, harum nobis.
-                Voluptatum vero blanditiis facilis cum. Accusantium minus, aspernatur obcaecati unde a corrupti suscipit
-                asperiores labore nisi amet voluptatibus quasi animi alias ipsa eos cumque, incidunt enim reprehenderit
-                reiciendis eum dolorum.
-                Cumque voluptates numquam harum sunt dolores, tempora praesentium officiis odio, hic ducimus dignissimos
-                in reiciendis maxime, blanditiis ipsa quo repudiandae? Quibusdam, corporis? Cum tenetur dolor quis
-                blanditiis molestias, excepturi iusto.
-                Nisi non quisquam praesentium pariatur iure, ullam vitae itaque labore fugiat animi eum quasi, ipsum
-                dolorem eos asperiores laborum. Officia blanditiis excepturi debitis. Minus saepe ipsum dolorem
-                perspiciatis tenetur maiores.
-                Enim magni inventore eligendi dolorem et ducimus alias doloribus reprehenderit deserunt, quos eum vitae,
-                deleniti officiis totam? Officia, odit vitae. Maxime voluptatem sequi alias architecto! Alias facilis
-                mollitia quibusdam libero.
-                Ex reprehenderit molestias ipsum, facilis veniam sunt accusantium labore quasi voluptatibus harum
-                recusandae incidunt voluptatem nam adipisci veritatis eaque eveniet non ipsa. Quam velit dolore veniam
-                nobis dignissimos adipisci odit!
-                Ea neque dignissimos adipisci nisi ab, exercitationem eius molestiae in ipsa dolores eos illum rerum,
-                architecto eaque minima aut, delectus odio consequatur mollitia explicabo. Eius, obcaecati ipsa!
-                Provident, laborum rem?
-                Architecto, illo? Neque provident tenetur dolore temporibus corporis, nesciunt, dolor, velit veritatis
-                quisquam ea numquam odio inventore impedit. Voluptatibus temporibus debitis consequuntur quam! Velit
-                pariatur, suscipit quo iste ducimus aut?
-                Quia, magnam laudantium officia qui architecto ducimus. Tempora blanditiis adipisci, laudantium eius
-                deserunt, quia consequuntur ullam fuga possimus autem veritatis nemo! Repellendus, ducimus asperiores
-                minus ut vel perferendis quae similique!
-                laboriosam dicta, cum exercitationem illo, sed cumque voluptas doloremque mollitia laudantium recusandae
-                rem
-                vero obcaecati. Rem.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, consequatur quas quisquam
-                distinctio optio dolor explicabo voluptatum accusantium corporis accusamus error recusandae. Sapient
-            </section>
-            <aside class="main__subcontent">
-                <section class="main__subcontent__login">
-                    <a href="" class="login__button">Login</a>
-                    <a href="" class="login__button">Sign up</a>
-                </section>
-            </aside>
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <p>Bản quyền thuộc về Xin và những người bạn</p>
-        </div>
-    </footer>
+    <section class="main">
+        <aside class="content-aside">
+            <nav>
+                <ul>
+                    <li class="content-nav">Conffessions</li>
+                    <li class="content-nav">Old books</li>
+                    <li class="content-nav">Schools</li>
+                    <li class="content-nav">Exams</li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="main-view"></section>
+    </section>
 </body>
 
 </html>

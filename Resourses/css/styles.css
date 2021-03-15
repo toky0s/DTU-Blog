@@ -1,0 +1,109 @@
+.button, .button-in-dark-backgroud, header .search .search-button, header .account .action-button {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.button-in-dark-backgroud, header .search .search-button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  color: white;
+}
+
+header .navbar {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .navbar .main-nav li {
+  display: inline-block;
+  padding: 20px 10px;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+}
+
+header .navbar .main-nav li:hover {
+  background-color: #c10000;
+}
+
+header .navbar .main-nav li a {
+  color: white;
+}
+
+header .navbar .main-nav .brand {
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+header .search {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+header .search .search-textbox {
+  border-radius: none;
+  padding: 10px 15px;
+}
+
+header .search .search-button {
+  padding: 10px 15px;
+}
+
+header .account {
+  margin: auto;
+}
+
+header .account .action-button {
+  border: 1px solid white;
+  color: white;
+}
+
+.main {
+  padding-top: 65px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .content-aside {
+  width: 15%;
+  background-color: #1e272e;
+}
+
+.main .content-aside .content-nav {
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.main .content-aside .content-nav:hover {
+  background-color: #2d3436;
+}
+/*# sourceMappingURL=styles.css.map */

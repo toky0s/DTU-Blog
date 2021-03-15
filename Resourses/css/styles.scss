@@ -1,0 +1,80 @@
+@import './colors';
+@import './buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    color: white;
+    .navbar {
+        background-color: $mainHeaderColor;
+        display: flex;
+        flex-wrap: wrap;
+        .main-nav {
+            li {
+                display: inline-block;
+                padding: 20px 10px;
+                transition: all 0.3;
+                &:hover{
+                    background-color: $navbarHoverColor;
+                }
+                a {
+                    color: white;
+                }
+            }
+            .brand {
+                padding: 20px 40px;
+                font-weight: bold;
+                font-size: larger;
+            }
+        }
+    }
+    .search {
+        align-items: center;
+        margin: auto;
+        .search-textbox {
+            border-radius: none;
+            padding: 10px 15px;
+        }
+        .search-button {
+            padding: 10px 15px;
+            @extend .button-in-dark-backgroud;
+        }
+    }
+    .account {
+        margin: auto;
+        .action-button {
+            @include action-button;
+        }
+    }
+}
+
+.main {
+    padding-top: 65px;
+    height: 100%;
+    display: flex;
+    .content-aside {
+        width: 15%;
+        background-color: $mainLeftSideBarColor;
+        .content-nav {
+            padding-left: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            &:hover {
+                background-color: $mainLeftSideBarHoverColor;
+            }
+        }
+    }
+}
