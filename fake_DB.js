@@ -10,3 +10,5 @@ const api = [
     initTime: Date.getDate(),
   },
 ];
+
+export default api;
