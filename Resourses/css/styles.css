@@ -89,16 +89,22 @@ header .account .action-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.main .content-aside {
+.main .subnav {
   width: 15%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   background-color: #1e272e;
 }
 
-.main .content-aside .nav-container {
+.main .subnav .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,12 +116,12 @@ header .account .action-button {
       flex-flow: column;
 }
 
-.main .content-aside .content-nav {
+.main .subnav .content-nav {
   padding: 20px 0px 20px 40px;
   color: white;
 }
 
-.main .content-aside .content-nav:hover {
+.main .subnav .content-nav:hover {
   background-color: #2d3436;
 }
 
@@ -133,7 +139,7 @@ header .account .action-button {
   height: 260px;
 }
 
-.main .main-view .main-header {
+.main .main-view .main_header {
   font-size: 30px;
   font-weight: bold;
   border-bottom: 1px solid #d1d8e0;
@@ -149,6 +155,8 @@ header .account .action-button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -252,5 +260,134 @@ header .account .action-button {
   font-size: 12px;
   color: #bdc3c7;
   margin-top: 4px;
+}
+
+.main .main-view .article_container .horizontal_large_article {
+  height: 270px;
+  border: 1px solid #d1d8e0;
+  border-bottom: 3px solid #d1d8e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  height: 280px;
+  width: 100%;
+  border: 1px solid #d1d8e0;
+  border-bottom: 3px solid #d1d8e0;
+}
+
+.main .main-view .article_container .horizontal_large_article .header_image {
+  height: 50%;
+  background-image: url("/resourses/images/ian-dooley-kVJdgGPSUSI-unsplash.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.main .main-view .article_container .horizontal_large_article .typo_container {
+  padding: 20px;
+}
+
+.main .main-view .article_container .horizontal_large_article .typo_container .title {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main .main-view .article_container .horizontal_large_article .typo_container .author {
+  margin-top: 30px;
+}
+
+.main .main-view .article_container .horizontal_large_article .typo_container .public_date {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-top: 4px;
+}
+
+.main .main-view .article_container .horizontal_large_article .thumnail_image {
+  width: 50%;
+  height: 100%;
+  background-image: url("/resourses/images/freestocks-8a95EVm0ovQ-unsplash.jpg");
+  background-size: cover;
+}
+
+.main .main-view .article_container .horizontal_large_article .wrap_content {
+  width: 50%;
+  margin: 10px;
+}
+
+.main .main-view .article_container .horizontal_small_article_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.main .main-view .article_container .horizontal_small_article_container .wrapcontent_article {
+  height: 200px;
+  width: 50%;
+  padding: 10px;
+}
+
+.main .main-view .article_container .horizontal_small_article_container .article {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #d1d8e0;
+  border-bottom: 3px solid #d1d8e0;
+}
+
+.main .main-view .article_container .horizontal_small_article_container .article .thumnail_image {
+  background-image: url("/resourses/images/freestocks-8a95EVm0ovQ-unsplash.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+}
+
+.main .main-view .article_container .horizontal_small_article_container .article .typo_container {
+  width: 50%;
+  padding: 20px;
+}
+
+.main .main-view .article_container .horizontal_small_article_container .article .typo_container .title {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main .main-view .article_container .horizontal_small_article_container .article .typo_container .author {
+  margin-top: 30px;
+}
+
+.main .main-view .article_container .horizontal_small_article_container .article .typo_container .public_date {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-top: 4px;
+}
+
+.main footer {
+  width: 100%;
+  height: 70px;
+  background-color: #ecf0f1;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
