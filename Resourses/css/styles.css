@@ -14,7 +14,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-decoration: none;
 }
 
@@ -23,6 +23,7 @@ body {
 }
 
 header {
+  position: fixed;
   width: 100%;
   color: white;
 }
@@ -84,6 +85,7 @@ header .account .action-button {
 
 .main {
   height: 100%;
+  padding-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +93,8 @@ header .account .action-button {
 
 .main .content-aside {
   width: 15%;
+  height: 100vh;
+  position: fixed;
   background-color: #1e272e;
 }
 
@@ -117,11 +121,12 @@ header .account .action-button {
 
 .main .main-view {
   width: 100%;
+  padding-left: 230px;
   margin: 30px 30px;
 }
 
 .main .main-view .ad {
-  background-image: url("/resourses/images/markus-spiske-WWPAYmO23Cc-unsplash.jpg");
+  background-image: url("/resourses/images/sebastian-molina-fotografia-natjj0CTa-s-unsplash.jpg");
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
@@ -144,19 +149,24 @@ header .account .action-button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.main .main-view .article_container .article {
-  height: 270px;
-  width: 250px;
   margin-top: 20px;
-  margin-right: 20px;
-  border: 1px solid #d1d8e0;
 }
 
-.main .main-view .article_container .article .header_image {
+.main .main-view .article_container .large_article {
+  width: 50%;
+  padding: 10px;
+}
+
+.main .main-view .article_container .large_article .article {
+  height: 270px;
+  border: 1px solid #d1d8e0;
+  border-bottom: 3px solid #d1d8e0;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.main .main-view .article_container .large_article .article .header_image {
   height: 50%;
   background-image: url("/resourses/images/ian-dooley-kVJdgGPSUSI-unsplash.jpg");
   background-size: cover;
@@ -164,21 +174,81 @@ header .account .action-button {
   background-position-y: center;
 }
 
-.main .main-view .article_container .article .typo_container {
+.main .main-view .article_container .large_article .article .typo_container {
   padding: 20px;
 }
 
-.main .main-view .article_container .article .typo_container .title {
+.main .main-view .article_container .large_article .article .typo_container .title {
   font-family: 'Cormorant Infant', serif;
   font-size: 20px;
   font-weight: bold;
 }
 
-.main .main-view .article_container .article .typo_container .author {
+.main .main-view .article_container .large_article .article .typo_container .author {
   margin-top: 30px;
 }
 
-.main .main-view .article_container .article .typo_container .public_date {
+.main .main-view .article_container .large_article .article .typo_container .public_date {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-top: 4px;
+}
+
+.main .main-view .article_container .large_article .article .shorted_content {
+  font-size: 14px;
+}
+
+.main .main-view .article_container .small_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  justify-items: right;
+}
+
+.main .main-view .article_container .small_article .wrapcontent_article {
+  width: 50%;
+  padding: 10px;
+}
+
+.main .main-view .article_container .small_article .wrapcontent_article .article {
+  height: 270px;
+  border: 1px solid #d1d8e0;
+  border-bottom: 3px solid #d1d8e0;
+}
+
+.main .main-view .article_container .small_article .wrapcontent_article .article .header_image {
+  height: 50%;
+  background-image: url("/resourses/images/ian-dooley-kVJdgGPSUSI-unsplash.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.main .main-view .article_container .small_article .wrapcontent_article .article .typo_container {
+  padding: 20px;
+}
+
+.main .main-view .article_container .small_article .wrapcontent_article .article .typo_container .title {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main .main-view .article_container .small_article .wrapcontent_article .article .typo_container .author {
+  margin-top: 30px;
+}
+
+.main .main-view .article_container .small_article .wrapcontent_article .article .typo_container .public_date {
   font-size: 12px;
   color: #bdc3c7;
   margin-top: 4px;

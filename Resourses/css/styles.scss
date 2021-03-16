@@ -1,13 +1,13 @@
-@import './colors';
-@import './buttons';
-@import './articles';
-@import './typo';
+@import "./colors";
+@import "./buttons";
+@import "./articles";
+@import "./typo";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     text-decoration: none;
 }
 
@@ -16,6 +16,7 @@ body {
 }
 
 header {
+    position: fixed;
     width: 100%;
     color: white;
     .navbar {
@@ -27,7 +28,7 @@ header {
                 display: inline-block;
                 padding: 20px 10px;
                 transition: all 0.3;
-                &:hover{
+                &:hover {
                     background-color: $navbarHoverColor;
                 }
                 a {
@@ -63,9 +64,12 @@ header {
 
 .main {
     height: 100%;
+    padding-top: 65px;
     display: flex;
     .content-aside {
         width: 15%;
+        height: 100vh;
+        position: fixed;
         background-color: $mainLeftSideBarColor;
         .nav-container {
             display: flex;
@@ -82,49 +86,42 @@ header {
     }
     .main-view {
         width: 100%;
+        padding-left: 230px;
         margin: 30px 30px;
         .ad {
-            background-image: url('/resourses/images/markus-spiske-WWPAYmO23Cc-unsplash.jpg');
+            background-image: url("/resourses/images/sebastian-molina-fotografia-natjj0CTa-s-unsplash.jpg");
             background-size: cover;
             background-position-x: center;
             background-position-y: center;
             height: 260px;
         }
-        .main-header{
+        .main-header {
             @include articleHeader;
             margin-top: 30px;
         }
         .article_container {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            .article {
-                height: 270px;
-                width: 250px;
-                margin-top: 20px;
-                margin-right: 20px;
-                border: 1px solid #d1d8e0;
-                .header_image {
-                    height: 50%;
-                    background-image: url('/resourses/images/ian-dooley-kVJdgGPSUSI-unsplash.jpg');
-                    background-size: cover;
-                    background-position-x: center;
-                    background-position-y: center;
+            margin-top: 20px;
+            .large_article {
+                width: 50%;
+                padding: 10px;
+                .article {
+                    @include largeArticle;
                 }
-                .typo_container {
-                    padding: 20px;
-                    .title {
-                        font-family: 'Cormorant Infant', serif;
-                        font-size: 20px;
-                        font-weight: bold;
-                    }
-                    .author {
-                        margin-top: 30px;
-                    }
-                    .public_date {
-                        font-size: 12px;
-                        color: #bdc3c7;
-                        margin-top: 4px;
+            }
+            .small_article {
+                display: flex;
+                flex-direction: row;
+                flex-flow: row;
+                flex-wrap: wrap;
+                flex-basis: 50%;
+                justify-items: right;
+                .wrapcontent_article {
+                    width: 50%;
+                    padding: 10px;
+                    .article {
+                        @include article;
                     }
                 }
             }
