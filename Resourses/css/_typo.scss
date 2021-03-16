@@ -1,0 +1,11 @@
+@mixin articleHeader {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #d1d8e0;
+    padding-bottom: 5px;
+}
+
+@mixin articleTitle {
+    font-family: 'Cormorant Infant', serif;
+    
+}

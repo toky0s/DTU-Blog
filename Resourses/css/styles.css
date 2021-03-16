@@ -19,12 +19,11 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 header {
   width: 100%;
-  position: fixed;
   color: white;
 }
 
@@ -84,7 +83,6 @@ header .account .action-button {
 }
 
 .main {
-  padding-top: 65px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,14 +94,93 @@ header .account .action-button {
   background-color: #1e272e;
 }
 
+.main .content-aside .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+
 .main .content-aside .content-nav {
-  padding-left: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px 0px 20px 40px;
   color: white;
 }
 
 .main .content-aside .content-nav:hover {
   background-color: #2d3436;
+}
+
+.main .main-view {
+  width: 100%;
+  margin: 30px 30px;
+}
+
+.main .main-view .ad {
+  background-image: url("/resourses/images/markus-spiske-WWPAYmO23Cc-unsplash.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 260px;
+}
+
+.main .main-view .main-header {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #d1d8e0;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.main .main-view .article_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .main-view .article_container .article {
+  height: 270px;
+  width: 250px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 1px solid #d1d8e0;
+}
+
+.main .main-view .article_container .article .header_image {
+  height: 50%;
+  background-image: url("/resourses/images/ian-dooley-kVJdgGPSUSI-unsplash.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.main .main-view .article_container .article .typo_container {
+  padding: 20px;
+}
+
+.main .main-view .article_container .article .typo_container .title {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main .main-view .article_container .article .typo_container .author {
+  margin-top: 30px;
+}
+
+.main .main-view .article_container .article .typo_container .public_date {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-top: 4px;
 }
 /*# sourceMappingURL=styles.css.map */
