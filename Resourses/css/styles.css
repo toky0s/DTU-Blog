@@ -14,7 +14,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-decoration: none;
 }
 
@@ -65,8 +65,12 @@ header .search {
 }
 
 header .search .search-textbox {
-  border-radius: none;
+  border-radius: 5px;
   padding: 10px 15px;
+}
+
+header .search .search-textbox:focus {
+  outline: none;
 }
 
 header .search .search-button {
@@ -169,7 +173,7 @@ header .account .action-button {
 }
 
 .main .main-view .article_container .article .typo_container .title {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-size: 20px;
   font-weight: bold;
 }
