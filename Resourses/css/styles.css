@@ -22,9 +22,14 @@ body {
   height: 100%;
 }
 
+.brand a img {
+  height: 40px;
+}
+
 header {
   position: fixed;
   width: 100%;
+  height: 40px;
   color: white;
 }
 
@@ -35,6 +40,19 @@ header .navbar {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+header .navbar .main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar .main-nav li {
@@ -85,7 +103,7 @@ header .account .action-button {
 
 .main {
   height: 100%;
-  padding-top: 65px;
+  padding-top: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

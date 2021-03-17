@@ -1,0 +1,19 @@
+@import "./comment";
+@import "./colors";
+
+.detail_view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80vh;
+    .article_section {
+        @include styles_article_section(80px, 100%, $splitLineColor);
+        border-right: 1px solid $splitLineColor;
+    }
+    .comment_section {
+        @include styles_comment_section(80px, $splitLineColor);
+    }
+}
+
+
+

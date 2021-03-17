@@ -1,0 +1,169 @@
+.detail_view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 80vh;
+}
+
+.detail_view .article_section {
+  width: 65%;
+  height: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #ced6e0;
+}
+
+.detail_view .article_section .article_info {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #ced6e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.detail_view .article_section .article_info .wrap_article_info {
+  width: 70%;
+  height: 100%;
+}
+
+.detail_view .article_section .article_info .wrap_article_info .title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.detail_view .article_section .article_info .wrap_article_info .author {
+  font-size: small;
+  color: #a4b0be;
+}
+
+.detail_view .article_section .article_info .wrap_ex_info {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.detail_view .article_section .article_info .wrap_ex_info p {
+  color: #a4b0be;
+  display: inline;
+  margin: auto auto;
+}
+
+.detail_view .article_section .article_content {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ced6e0;
+  overflow-y: scroll;
+}
+
+.detail_view .article_section .article_content .content {
+  padding: 30px;
+  text-align: justify;
+}
+
+.detail_view .article_section .article_react {
+  width: 100%;
+  height: 80px;
+}
+
+.detail_view .comment_section {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detail_view .comment_section .comment_head {
+  height: 80px;
+  border-bottom: 1px solid #ced6e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.detail_view .comment_section .comment_head p {
+  font-size: 30px;
+}
+
+.detail_view .comment_section .comment_container {
+  height: 100%;
+  border-bottom: 1px solid #ced6e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+}
+
+.detail_view .comment_section .comment_container .comment {
+  margin: 0 15px 15px 15px;
+  padding: 15px;
+  background-color: #ffffff;
+  -webkit-box-shadow: -6px 6px 34px -7px #dfe4ea;
+          box-shadow: -6px 6px 34px -7px #dfe4ea;
+}
+
+.detail_view .comment_section .comment_container .comment .comment_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.detail_view .comment_section .comment_container .comment .comment_info .author {
+  width: 70%;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.detail_view .comment_section .comment_container .comment .comment_info .time {
+  font-size: 13px;
+}
+
+.detail_view .comment_section .comment_container .comment .comment_content {
+  font-family: 'Barlow', sans-serif;
+  margin-top: 7px;
+}
+
+.detail_view .comment_section .your_comment {
+  height: 80px;
+}
+/*# sourceMappingURL=detail_view.css.map */
