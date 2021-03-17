@@ -15,27 +15,33 @@ body {
     height: 100%;
 }
 
-.brand a img {
-    height: 40px;
-}
-
 header {
     position: fixed;
     width: 100%;
-    height: 40px;
-    color: white;
+    height: 60px;
     .navbar {
+        height: 80px;
         background-color: $mainHeaderColor;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
         .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 100%;
+            align-items: center;
             ul {
+                height: 100%;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
             }
             li {
-                display: inline-block;
+                display: flex;
+                align-items: center;
+                height: 100%;
                 padding: 20px 10px;
                 transition: all 0.3;
                 &:hover {
@@ -44,11 +50,10 @@ header {
                 a {
                     color: white;
                 }
-            }
-            .brand {
-                padding: 20px 40px;
-                font-weight: bold;
-                font-size: larger;
+                img {
+                    height: 60px;
+                    padding: 10px 20px;
+                }
             }
         }
     }
@@ -74,7 +79,7 @@ header {
 
 .main {
     height: 100%;
-    padding-top: 85px;
+    padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -153,4 +158,3 @@ header {
         color: white;
     }
 }
-

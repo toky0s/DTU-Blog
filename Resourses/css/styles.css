@@ -22,27 +22,47 @@ body {
   height: 100%;
 }
 
-.brand a img {
-  height: 40px;
-}
-
 header {
   position: fixed;
   width: 100%;
-  height: 40px;
-  color: white;
+  height: 60px;
 }
 
 header .navbar {
+  height: 80px;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .navbar .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar .main-nav ul {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +76,13 @@ header .navbar .main-nav ul {
 }
 
 header .navbar .main-nav li {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   padding: 20px 10px;
   -webkit-transition: all 0.3;
   transition: all 0.3;
@@ -70,10 +96,9 @@ header .navbar .main-nav li a {
   color: white;
 }
 
-header .navbar .main-nav .brand {
-  padding: 20px 40px;
-  font-weight: bold;
-  font-size: larger;
+header .navbar .main-nav li img {
+  height: 60px;
+  padding: 10px 20px;
 }
 
 header .search {
@@ -103,7 +128,7 @@ header .account .action-button {
 
 .main {
   height: 100%;
-  padding-top: 85px;
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
